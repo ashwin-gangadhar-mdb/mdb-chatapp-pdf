@@ -134,10 +134,10 @@ st.session_state.vectorstore = get_vector_store()
 st.session_state.conv = get_conversation_chain()
 tab1, tab2 = st.tabs(["Q & A", "ADD document"])
 with tab1:        
-    st.markdown(
-        """<img src="https://lh3.googleusercontent.com/I2_PSO0vMM8kLJxJ-OUIqtSBo3krzhmctqIkFv8Exgchm5X04h_MysTSB-8mELD6J_OIA1N2ExP_=e14-rj-sc0xffffff-h338-w600" class=" css-1lo3ubz" alt="MongoDB logo" style="height:200px;width:340px;align:center"> """,
-        unsafe_allow_html=True)
-    # st.title("""Assistant for any source powered by Atlas Vector Search and VertexAI""")
+    # st.markdown(
+    #     """<img src="https://lh3.googleusercontent.com/I2_PSO0vMM8kLJxJ-OUIqtSBo3krzhmctqIkFv8Exgchm5X04h_MysTSB-8mELD6J_OIA1N2ExP_=e14-rj-sc0xffffff-h338-w600" class=" css-1lo3ubz" alt="MongoDB logo" style="height:200px;width:340px;align:center"> """,
+    #     unsafe_allow_html=True)
+    st.title("""Assistant for any source powered by Atlas Vector Search , OpenAI and Instructor Embeddings""")
 
     chat_history_clear = st.button("Clear Chat History")
 
@@ -188,4 +188,4 @@ with tab2:
         - [MongoDB Vector Search](https://www.mongodb.com/products/platform/atlas-vector-search)
         ''')
         add_vertical_space(5)
-        st.write('Made with ❤️ by [Ashwin Gangadhar](linkedin.com/in/ashwin-gangadhar-00b17046) and [Venkatesh Shanbhag](https://www.linkedin.com/in/venkatesh-shanbhag/)')
+        st.write('Made with ❤️ by [Ashwin Gangadhar](linkedin.com/in/ashwin-gangadhar-00b17046)')
